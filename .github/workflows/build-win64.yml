@@ -32,7 +32,7 @@ jobs:
       - name: Get Date
         id: date
         run: echo "date=$(Get-Date -Format 'yyyyMMdd')" >> $env:GITHUB_OUTPUT
-        shell: pwsh
+        shell: powershell
         
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
